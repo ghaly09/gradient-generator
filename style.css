@@ -81,6 +81,12 @@ input[type="color"]::-webkit-color-swatch {
   cursor: pointer;
 }
 
+.buttons button:hover {
+  border: none;
+  background-color: #008b87;
+  color: #fff;
+}
+
 .rotate-icon i {
   transform: rotate(45deg);
 }
@@ -100,6 +106,7 @@ input[type="color"]::-webkit-color-swatch {
   border-radius: 25px;
   margin: 0 auto 30px auto;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .output {
@@ -117,12 +124,22 @@ input[type="color"]::-webkit-color-swatch {
   background-color: transparent;
 }
 
+.copy-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 em {
   font-size: 10px;
 }
 
 #copy {
-  width: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  width: 60px;
   font-size: 14px;
   background-color: #00a8a3;
   color: #fff;
@@ -131,4 +148,14 @@ em {
   padding: 5px;
   margin: 5px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+#copy i {
+  color: #e9e9e9;
+}
+
+#submit:hover,
+#copy:hover {
+  background-color: #008b87;
 }
