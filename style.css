@@ -103,6 +103,9 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .output {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   background-color: #f0f2fc;
 }
 
@@ -112,4 +115,20 @@ input[type="color"]::-webkit-color-swatch {
   color: #30304a;
   padding: 10px 20px;
   background-color: transparent;
+}
+
+em {
+  font-size: 10px;
+}
+
+#copy {
+  width: 50px;
+  font-size: 14px;
+  background-color: #00a8a3;
+  color: #fff;
+  position: relative;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
