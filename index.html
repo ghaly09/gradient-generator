@@ -15,72 +15,77 @@
     <link rel="stylesheet" href="style.css" />
     <title>Gradient Generator | Rachmat Ghaly</title>
   </head>
-  <body class="project-title">
-    <div>
-      <h2>Gradient Generator</h2>
-      <p>Created by Rachmat Ghay</p>
-    </div>
-
-    <!-- Colors Palette -->
-    <div class="container">
-      <div class="colors">
-        <input type="color" id="color-one" value="#00A8A3" />
-        <input type="color" id="color-two" value="#1a237e" />
+  <body>
+    <main>
+      <div class="project-title">
+        <h2>Gradient Generator</h2>
+        <p>Created by Rachmat Ghaly</p>
       </div>
 
-      <!-- Button Reguler Directions -->
-      <p class="change-direction">Change Direction:</p>
-      <div class="buttons">
-        <button onclick="serDirection('to top', this)">
-          <i class="fas fa-arrow-up"></i>
-        </button>
-        <button class="active" onclick="serDirection('to bottom', this)">
-          <i class="fas fa-arrow-down"></i>
-        </button>
-        <button onclick="serDirection('to right', this)">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-        <button onclick="serDirection('to left', this)">
-          <i class="fas fa-arrow-left"></i>
-        </button>
+      <!-- Colors Palette -->
+      <div class="container">
+        <div class="colors">
+          <input type="color" id="color-one" value="#00A8A3" />
+          <input type="color" id="color-two" value="#1a237e" />
+        </div>
 
-        <!-- Rotate Icons Deirections-->
-        <button
-          class="rotate-icon"
-          onclick="serDirection('to top right', this)"
-        >
-          <i class="fas fa-arrow-up"></i>
-        </button>
-        <button
-          class="rotate-icon"
-          onclick="serDirection('to bottom left', this)"
-        >
-          <i class="fas fa-arrow-down"></i>
-        </button>
-        <button
-          class="rotate-icon"
-          onclick="serDirection('to bottom right', this)"
-        >
-          <i class="fas fa-arrow-right"></i>
-        </button>
-        <button class="rotate-icon" onclick="serDirection('to top left', this)">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-      </div>
-      <!-- Generate Code style -->
-      <button id="submit" onclick="generateCode()">Generate Code</button>
-      <div class="output">
-        <textarea id="code" rows="2"></textarea>
-        <!-- Copy The Code -->
-        <div class="copy-row">
-          <em>Copy and Paste this Code to Your Project -></em>
-          <button id="copy" onclick="copyText()">
-            <p>Copy</p>
-            <i class="far fa-clipboard"></i>
+        <!-- Button Reguler Directions -->
+        <p class="change-direction">Change Direction:</p>
+        <div class="buttons">
+          <button onclick="setDirection('to top', this)">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+          <button class="active" onclick="setDirection('to bottom', this)">
+            <i class="fas fa-arrow-down"></i>
+          </button>
+          <button onclick="setDirection('to right', this)">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button onclick="setDirection('to left', this)">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+
+          <!-- Rotate Icons Deirections-->
+          <button
+            class="rotate-icon"
+            onclick="setDirection('to top right', this)"
+          >
+            <i class="fas fa-arrow-up"></i>
+          </button>
+          <button
+            class="rotate-icon"
+            onclick="setDirection('to bottom left', this)"
+          >
+            <i class="fas fa-arrow-down"></i>
+          </button>
+          <button
+            class="rotate-icon"
+            onclick="setDirection('to bottom right', this)"
+          >
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button
+            class="rotate-icon"
+            onclick="setDirection('to top left', this)"
+          >
+            <i class="fas fa-arrow-left"></i>
           </button>
         </div>
+        <!-- Generate Code style -->
+        <button id="submit" onclick="generateCode()">Generate Code</button>
+        <div class="output">
+          <textarea id="code" rows="2"></textarea>
+          <!-- Copy The Code -->
+          <div class="copy-row">
+            <em>Copy and Paste this Code to Your Project -></em>
+            <button id="copy" onclick="copyText()">
+              <p>Copy</p>
+              <i class="far fa-clipboard"></i>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
