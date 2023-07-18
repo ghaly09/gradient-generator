@@ -6,7 +6,8 @@ A Generating Gradient App with many features to help Developers & designers, as 
 
 ## The Result
 
-You can type the country for checking the Weather
+You can choose Colors and Directions of the gradient
+and copy the Code
 
 Click Play to Preview:
 
